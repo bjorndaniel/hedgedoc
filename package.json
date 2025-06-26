@@ -44,7 +44,12 @@
     "@dicebear/converter@9.2.2": "patch:@dicebear/converter@npm%3A9.2.2#./.yarn/patches/@dicebear-converter-fix-js-file-path.patch"
   },
   "devDependencies": {
+    "@types/jspdf": "^2.0.0",
     "dotenv-cli": "7.4.4",
     "turbo": "2.1.3"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.10.3",
+    "jspdf": "^3.0.1"
   }
 }

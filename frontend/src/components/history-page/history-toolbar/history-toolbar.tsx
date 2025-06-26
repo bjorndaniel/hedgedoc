@@ -24,6 +24,7 @@ import React, { useCallback } from 'react'
 import { Button, Col } from 'react-bootstrap'
 import { CloudUpload as IconCloudUpload } from 'react-bootstrap-icons'
 import { useIsLoggedIn } from '../../../hooks/common/use-is-logged-in'
+import { ExportAllMarkdownButton } from './export-all-markdown-button'
 
 export enum ViewStateEnum {
   CARD,
@@ -97,6 +98,9 @@ export const HistoryToolbar: React.FC = () => {
       )}
       <div className={'me-1 mb-1'}>
         <HistoryViewModeToggleButton />
+      </div>
+      <div className={'me-1 mb-1'}>
+        <ExportAllMarkdownButton />
       </div>
     </Col>
   )
